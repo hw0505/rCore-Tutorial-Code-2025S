@@ -12,6 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Install latest Rust
+        run: |
+          rustup update stable
+          rustup default stable
       - name: Build doc
         run: |
           git clone https://github.com/LearningOS/rCore-Tutorial-Test-2025S.git user
