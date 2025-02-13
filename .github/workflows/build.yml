@@ -8,7 +8,7 @@ env:
 
 jobs:
   build-doc:
-    if: github.repository == 'LearningOS/rCore-Tutorial-Code-2025S'
+    if: github.repository == 'hw0505/rCore-Tutorial-Code-2025S'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
